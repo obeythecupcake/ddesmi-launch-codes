@@ -23,7 +23,7 @@ export class ListingDetailsComponent implements OnInit {
         this.listings = response;
       },
       (error: HttpErrorResponse) => {
-        alert(error.message);
+        alert("OMG BADD THINGS HAPPENING< SEND HELP>");
       }
     )
   }

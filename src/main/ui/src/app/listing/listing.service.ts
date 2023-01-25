@@ -13,6 +13,6 @@ export class ListingService {
   constructor( private http: HttpClient) { }
 
   public getListings(): Observable<Listing[]> {
-    return this.http.get<Listing[]>(`${this.javaServerUrl}`);
+    return this.http.get<Listing[]>(`${this.javaServerUrl}/properties/all`);
   }
 }
